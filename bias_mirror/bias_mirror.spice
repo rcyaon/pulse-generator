@@ -1,0 +1,11 @@
+** sch_path: /headless/pulse-generator/bias_mirror/bias_mirror.sch
+**.subckt bias_mirror Iref Iout
+*.ipin Iref
+*.opin Iout
+XM1 Iout Iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM2 Iref Iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1 m=1
+**.ends
+.GLOBAL VDD
+.end
