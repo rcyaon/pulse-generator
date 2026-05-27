@@ -4,14 +4,14 @@ Building a current-starved inverter pulse generator in SKY130 to understand how 
 ```
 ├── blocks/
 │   ├── csi_cell/
-│   │   ├── csi_cell.xschem   
+│   │   ├── csi_cell.sch   
 │   │   ├── csi_cell.spice   
 │   │   ├── csi_cell.gds   
 │   │   └── sim/
 │   │       ├── tb_csi_cell.xschem
 │   │       └── tb_csi_cell.spice
 │   └── bias_mirror/
-│       ├── bias_mirror.xschem
+│       ├── bias_mirror.sch
 │       ├── bias_mirror.spice
 │       ├── bias_mirror.gds
 │       └── sim/
