@@ -29,3 +29,12 @@ Built a current-starved inverter pulse generator in SKY130 to understand how bia
 │   └── pulse_width_vs_vctrl.png # key result plot to document
 └── README.md
 ```
+
+## `blocks/`
+Individual circuit blocks, each self-contained with schematic, layout, and simulation testbench.
+
+- `csi_cell/`: single current-starved inverter delay stage
+- `bias_mirror/`: current mirror setting Ibias from external Vctrl pad
+
+## `top/`
+Full assembled design connecting all blocks, with final GDS and LEF for handoff.
