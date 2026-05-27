@@ -18,7 +18,7 @@ Building a current-starved inverter pulse generator in SKY130 to understand how 
 │           ├── tb_bias_mirror.xschem
 │           └── tb_bias_mirror.spice
 ├── top/
-│   ├── top.xschem   
+│   ├── top.sch   
 │   ├── top.spice 
 │   ├── top.gds
 │   ├── top.lef
