@@ -25,8 +25,6 @@ Built a current-starved inverter pulse generator in SKY130 to understand how bia
 │   └── sim/
 │       ├── tb_top.xschem
 │       └── tb_top.spice
-├── docs/
-│   └── pulse_width_vs_vctrl.png # key result plot to document
 └── README.md
 ```
 
