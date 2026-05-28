@@ -53,6 +53,6 @@ Building a current-starved inverter pulse generator in SKY130 to understand how 
 │   └── run_cosim.sh
 └── README.md
 ```
-
+## W.I.P.
 - `csi_cell/`: single current-starved inverter delay stage
 - `bias_mirror/`: current mirror setting Ibias from external Vctrl pad
