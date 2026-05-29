@@ -1,0 +1,29 @@
+** sch_path: /headless/pulse-generator/bias_mirror/sim/tb_bias_mirror.sch
+**.subckt tb_bias_mirror
+x1 net2 net1 bias_mirror
+I0 net1 GND 1u
+R1 net2 GND 10k m=1
+**** begin user architecture code
+
+
+.dc Iref 1u 20u 1u
+.plot v(Iout_node)
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /headless/pulse-generator/bias_mirror/bias_mirror.sym # of pins=2
+** sym_path: /headless/pulse-generator/bias_mirror/bias_mirror.sym
+** sch_path: /headless/pulse-generator/bias_mirror/bias_mirror.sch
+.subckt bias_mirror Iout Iref
+*.ipin Iref
+*.opin Iout
+XM1 Iout Iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM2 Iref Iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1 m=1
+V1 VDD GND 1.8
+.ends
+
+.GLOBAL GND
+.end
