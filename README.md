@@ -1,5 +1,5 @@
 # SKY130 Mixed-signal Memory Testchip
-Experimenting making a mixed-signal test chip where a current-starved pulse generator drives an SRAM bitcell, characterizing how bias current controls switching in SKY130.
+Experimenting making a mixed-signal test chip where a current-starved pulse generator drives an SRAM bitcell, characterizing how bias current controls switching.
 
 ```
 ├── csi_cell/
