@@ -1,5 +1,5 @@
-# Current-Starved Inverter Pulse Generator in SKY130
-Building a current-starved inverter pulse generator in SKY130 to understand how bias current controls pulse width for memory cell switching.
+# SKY130 Mixed-signal Memory Testchip
+Experimenting making a mixed-signal test chip where a current-starved pulse generator drives an SRAM bitcell, characterizing how bias current controls switching in SKY130.
 
 ```
 ├── csi_cell/
@@ -53,6 +53,11 @@ Building a current-starved inverter pulse generator in SKY130 to understand how 
 │   └── run_cosim.sh
 └── README.md
 ```
-## W.I.P.
-- `csi_cell/`: single current-starved inverter delay stage
-- `bias_mirror/`: current mirror setting $I_{bias}$ from external $V_{ctrl}$ pin
+
+## Progress
+- [x] Schematics and Verilog written
+- [ ] Block-level simulation clean 
+- [ ] Pulse width vs Ibias sweep plot generated
+- [ ] Co-simulation done (ngspice + iverilog)
+- [ ] DRC and LVS clean layout 
+- [ ] Parasitic extraction and post-layout simulation
